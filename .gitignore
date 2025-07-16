@@ -1,0 +1,14 @@
+*cc.sh
+*egg-info/
+*temp_cfg/
+*env_temp_cfg/
+bin/
+lib/
+.idea/
+pyvenv.cfg
+lop.egg-info
+__pycache__/
+share/
+*.pyc
+data/
+.DS_Store
