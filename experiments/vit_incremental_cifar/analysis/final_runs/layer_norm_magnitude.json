@@ -1,0 +1,39 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-False",
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-True"
+        ],
+
+    "summary_names":
+        [
+            "ln_weight_magnitude"
+        ],
+
+    "compute_weight_magnitude_summaries": false,
+
+    "max_samples": 20,
+
+    "plot_dir": "./plots/incremental_cifar/vision_transformer/weight_magnitude_summaries/",
+
+    "plot_parameters": {
+        "log_y_scale": false,
+        "x_label": "Number of Classes",
+        "xlim": [-0.5, 20.5],
+        "xticks": [0, 5, 10, 15, 20],
+        "labels":
+        [
+            "Base System",
+            "Network Resetting"
+        ],
+        "color_order":
+        [
+            "sky_blue",
+            "pale_violet"
+        ]
+    },
+
+    "plot_name_prefix": "linear_scale"
+}

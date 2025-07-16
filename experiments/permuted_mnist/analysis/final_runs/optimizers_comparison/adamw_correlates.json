@@ -1,0 +1,49 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network_with_different_optimizers/",
+
+    "parameter_combinations":
+        [
+            "use_adamw-True_stepsize-0.0005_momentum-0.9_beta2-0.999",
+            "use_adamw-True_l2_factor-1e-05",
+            "use_adamw-True_l2_factor-1e-05_parameter_noise_var-1e-09",
+            "use_adamw-True_maturity_threshold-1_replacement_rate-0.001_cbp_utility-contribution",
+            "use_adamw-True_redo_reinit_freq-16_redo_reinit_threshold-1e-05_redo_utility-activation",
+            "use_adamw-True_reinit_freq-2048_reinit_factor-1e-06_utility_function-gradient_pruning_method-threshold_reinit_strat-resample"
+        ],
+
+    "summary_names":
+        [
+            "proportion_dead_units_per_permutation",
+            "stable_rank_per_permutation",
+            "average_weight_magnitude_per_permutation",
+            "average_gradient_magnitude_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/optimizers_comparison/",
+
+    "bin_sizes": [1, 1, 1, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "Base System",
+            "L2 Regularization",
+            "Shrink and Perturb",
+            "CBP Contribution",
+            "ReDo Activation",
+            "SWR"
+        ],
+        "color_order":
+        [
+            "black",
+            "pale_violet",
+            "vermilion",
+            "orange",
+            "blue_green",
+            "blue"
+        ],
+        "xlim": [-50, 1050]
+    },
+
+    "plot_name_prefix": "adamw_comparison"
+}

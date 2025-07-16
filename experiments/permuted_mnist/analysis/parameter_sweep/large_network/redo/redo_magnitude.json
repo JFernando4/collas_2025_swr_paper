@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/redo/",
+
+  "parameter_combinations": [
+    "redo_reinit_freq-Reinit-Frequency_redo_reinit_threshold-Reinit-Threshold_redo_utility-magnitude"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Threshold"],
+    "placeholders_values": [
+      ["8", "16", "32", "64", "128", "256"],
+      ["1e-05", "0.0001", "0.001", "0.01", "0.1", "1.0"]
+    ]
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+    },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "redo_magnitude"
+}

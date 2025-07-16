@@ -1,0 +1,28 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network_with_different_optimizers/shrink_and_perturb/",
+
+  "parameter_combinations": [
+    "use_adamw-False_stepsize-0.005_l2_factor-0.0001_parameter_noise_var-Noise-Var"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Noise-Var"],
+    "placeholders_values": [
+      ["1e-09", "1e-08", "1e-07", "1e-06", "1e-05", "0.0001"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black"],
+  "y_label": "Average Accuracy",
+  "x_label": "Noise Variance"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network_with_different_optimizers/",
+
+  "plot_name_prefix": "shrink_and_perturb_sgdw_9"
+}

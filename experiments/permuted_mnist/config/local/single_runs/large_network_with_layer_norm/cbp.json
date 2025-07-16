@@ -1,0 +1,27 @@
+{
+  "__comment_1__": "Parameters for the optimizer.",
+  "stepsize": 0.1,
+  "use_ln": true,
+  "preactivation_ln": false,
+
+  "__comment_2__": "Parameters for the architecture",
+  "num_hidden": 100,
+  "extended_summaries": true,
+
+  "__comment_3__": "Permuted MNIST problem parameters. Classes increase by 5 every 100 epochs.",
+  "num_permutations": 1000,
+
+  "__comment_4__": "Parameters for continual backpropagation",
+  "maturity_threshold": 1,
+  "replacement_rate": 1e-2,
+  "cbp_utility": "contribution",
+  "reinit_after_ln": true,
+
+  "__comment_5__": "For creating the results directory.",
+  "relevant_parameters": [
+    "num_hidden",
+    "maturity_threshold",
+    "replacement_rate",
+    "cbp_utility"
+  ]
+}

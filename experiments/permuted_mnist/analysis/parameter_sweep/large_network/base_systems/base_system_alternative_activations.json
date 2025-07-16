@@ -1,0 +1,35 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/alternative_activations/",
+
+  "parameter_combinations": [
+    "stepsize-Step-Size_activation_function-Activation"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Activation", "Step-Size"],
+    "placeholders_values": [
+      ["tanh", "leaky_relu", "sigmoid", "silu", "gelu"],
+      ["0.001", "0.005", "0.01", "0.05", "0.1", "0.5"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": [
+    "blue_green",
+    "vermilion",
+    "blue",
+    "orange",
+    "pale_violet"
+  ],
+  "y_label": "Average Accuracy",
+  "x_label": "Step Size"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "base_system_alternative_activations"
+}

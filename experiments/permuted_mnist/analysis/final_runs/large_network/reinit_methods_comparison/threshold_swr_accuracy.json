@@ -1,0 +1,51 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.05_activation_function-relu",
+            "l2_factor-0.0001",
+            "l2_factor-0.0001_parameter_noise_var-1e-07",
+            "maturity_threshold-500_replacement_rate-0.0001_cbp_utility-contribution",
+            "redo_reinit_freq-16_redo_reinit_threshold-0.0001_redo_utility-activation",
+            "pruning_method-threshold_reinit_freq-2048_reinit_factor-1e-05_utility_function-gradient_reinit_strat-resample",
+            "pruning_method-threshold_reinit_freq-2048_reinit_factor-0.001_utility_function-gradient_reinit_strat-mean"
+        ],
+
+    "summary_names":
+        [
+            "train_accuracy_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/large_network/reinit_methods_comparison/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "Base System",
+            "L2 Regularization",
+            "Shrink and Perturb",
+            "CBP Contribution",
+            "ReDo Activation",
+            "SWR Resample",
+            "SWR Mean"
+        ],
+        "color_order":
+        [
+            "black",
+            "pale_violet",
+            "vermilion",
+            "orange",
+            "blue_green",
+            "blue",
+            "gray"
+        ],
+
+        "xlim": [-50, 1050],
+        "ylim": [0.82, 0.945]
+    },
+
+    "plot_name_prefix": "threshold_swr"
+}

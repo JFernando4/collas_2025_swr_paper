@@ -1,0 +1,28 @@
+{
+  "__comment_1__": "Parameters for the optimizer.",
+  "use_adamw":  false,
+  "momentum":   0.99,
+  "stepsize":   1e-4,
+
+  "__comment_2__": "Parameters for the architecture",
+  "num_hidden": 100,
+  "extended_summaries": false,
+
+  "__comment_3__": "Permuted MNIST problem parameters",
+  "num_permutations": 100,
+
+  "__comment_4__": "CBP parameters",
+  "reset_optim_after_reinit": true,
+  "redo_reinit_freq": 15,
+  "redo_reinit_threshold": 0.01,
+  "redo_utility": "original",
+
+  "__comment_5__": "For creating the results directory.",
+  "relevant_parameters": [
+    "use_adamw",
+    "momentum",
+    "reset_optim_after_reinit",
+    "redo_reinit_freq",
+    "redo_reinit_threshold"
+  ]
+}

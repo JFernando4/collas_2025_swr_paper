@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/small_network_with_layer_norm/cbp/",
+
+  "parameter_combinations": [
+    "maturity_threshold-Maturity-Threshold_replacement_rate-Replacement-Rate_cbp_utility-contribution_reinit_after_ln-False"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Maturity-Threshold", "Replacement-Rate"],
+    "placeholders_values": [
+      ["1", "5", "10", "50", "100"],
+      ["1e-06", "1e-05", "0.0001", "0.001", "0.01"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+  "y_label": "Average Accuracy",
+  "x_label": "Reinit Factor"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/small_network_with_layer_norm/",
+
+  "plot_name_prefix": "cbp_contribution"
+}

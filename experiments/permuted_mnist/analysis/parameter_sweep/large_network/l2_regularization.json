@@ -1,0 +1,28 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/l2_regularization/",
+
+  "parameter_combinations": [
+    "l2_factor-L2-Factor"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["L2-Factor"],
+    "placeholders_values": [
+      ["1e-08", "1e-07", "1e-06", "1e-05", "0.0001", "0.001"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black"],
+  "y_label": "Average Accuracy",
+  "x_label": "L2-Factor"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "l2_regularization"
+}

@@ -1,0 +1,47 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.05_activation_function-relu",
+            "l2_factor-0.0001",
+            "l2_factor-0.0001_parameter_noise_var-1e-07",
+            "stepsize-0.05_activation_function-relu_use_crelu-True",
+            "stepsize-0.1_activation_function-relu_use_skip_connections-True_preactivation_skip_connections-False",
+            "stepsize-0.1_use_ln-True_preactivation_ln-False"
+        ],
+
+    "summary_names":
+        [
+            "train_loss_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/large_network/plasticity_algorithms_baselines/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "Base System",
+            "L2 Regularization",
+            "Shrink and Perturb",
+            "CReLU",
+            "Skip Connections",
+            "Layer Normalization"
+        ],
+        "color_order":
+        [
+            "black",
+            "pale_violet",
+            "vermilion",
+            "blue",
+            "orange",
+            "blue_green"
+        ],
+
+        "xlim": [-50, 1050]
+    },
+
+    "plot_name_prefix": "plasticity_algorithms_baselines"
+}

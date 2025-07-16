@@ -1,0 +1,30 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/extra_large_network/redo/",
+
+  "parameter_combinations": [
+    "redo_reinit_freq-Reinit-Frequency_redo_reinit_threshold-Reinit-Threshold_redo_utility-activation"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Threshold"],
+    "placeholders_values": [
+      ["4096", "8192", "16384"],
+      ["1e-05", "0.0001", "0.001", "0.01", "0.1"]
+    ],
+    "precision": 3
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+    },
+
+  "sample_size": 5,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/extra_large_network/",
+
+  "plot_name_prefix": "redo_activation"
+}

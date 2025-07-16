@@ -1,0 +1,17 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/incremental_cifar/",
+
+  "parameter_combinations": [
+    "reparam_ln-True_replacement_rate-Replacement-Rate_maturity_threshold-Maturity-Threshold"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Maturity-Threshold", "Replacement-Rate"],
+    "placeholders_values": [
+      ["1000", "10000"],
+      ["1e-08", "5e-08", "1e-07", "5e-07", "1e-06"]
+    ]
+  }
+}

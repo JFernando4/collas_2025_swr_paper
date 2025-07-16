@@ -1,0 +1,44 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.1_activation_function-relu",
+            "stepsize-0.05_activation_function-relu",
+            "stepsize-0.01_activation_function-relu",
+            "stepsize-0.005_activation_function-relu",
+            "stepsize-0.001_activation_function-relu"
+        ],
+
+    "summary_names":
+        [
+            "train_accuracy_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/large_network/stepsize_comparison/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "Step Size = 0.1",
+            "Step Size = 0.05",
+            "Step Size = 0.01",
+            "Step Size = 0.005",
+            "Step Size = 0.001"
+        ],
+        "color_order":
+        [
+            "blue_green",
+            "black",
+            "vermilion",
+            "blue",
+            "orange"
+        ],
+        "xlim": [-50, 1050],
+        "ylim": [0.74, 0.94]
+    },
+
+    "plot_name_prefix": "stepsize_comparison"
+}

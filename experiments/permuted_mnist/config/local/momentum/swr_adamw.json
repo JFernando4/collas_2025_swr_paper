@@ -1,0 +1,30 @@
+{
+  "__comment_1__": "Parameters for the optimizer.",
+  "use_adamw":  true,
+  "momentum":   0.99,
+  "stepsize":   5e-4,
+
+  "__comment_2__": "Parameters for the architecture",
+  "num_hidden": 100,
+  "extended_summaries": false,
+
+  "__comment_3__": "Permuted MNIST problem parameters",
+  "num_permutations": 100,
+
+  "__comment_4__": "SWR parameters",
+  "reset_optim_after_reinit": true,
+  "reinit_freq": 600,
+  "reinit_factor": 1e-4,
+  "utility_function": "gradient",
+  "pruning_method": "threshold",
+  "reinit_strat": "resample",
+
+  "__comment_5__": "For creating the results directory.",
+  "relevant_parameters": [
+    "use_adamw",
+    "momentum",
+    "reset_optim_after_reinit",
+    "reinit_freq",
+    "reinit_factor"
+  ]
+}

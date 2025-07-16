@@ -1,0 +1,16 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/incremental_cifar/",
+
+  "parameter_combinations": [
+    "parameter_noise_var-Noise-Var"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Noise-Var"],
+    "placeholders_values": [
+      ["1e-09", "5e-09", "1e-08", "5e-08", "1e-07"]
+    ]
+  }
+}

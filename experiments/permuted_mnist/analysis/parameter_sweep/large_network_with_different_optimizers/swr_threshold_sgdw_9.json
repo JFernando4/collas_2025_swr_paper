@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network_with_different_optimizers/swr_threshold/",
+
+  "parameter_combinations": [
+    "use_adamw-False_momentum-0.9_reinit_freq-Reinit-Freq_reinit_factor-Reinit-Factor_utility_function-gradient_pruning_method-threshold_reinit_strat-resample"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Freq", "Reinit-Factor"],
+    "placeholders_values": [
+      ["256", "512", "1024", "2048", "4096"],
+      ["0.01", "0.001", "0.0001", "1e-05", "1e-06"]
+    ]
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network_with_different_optimizers/",
+
+  "plot_name_prefix": "swr_threshold_sgdw"
+}

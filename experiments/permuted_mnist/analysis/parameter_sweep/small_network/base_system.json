@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/small_network/base_system/",
+
+  "parameter_combinations": [
+    "stepsize-Step-Size"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Step-Size"],
+    "placeholders_values": [
+      ["0.0005", "0.001", "0.005", "0.01", "0.05", "0.1"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black"],
+  "y_label": "Average Accuracy",
+  "x_label": "Step Size"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/small_network/",
+
+  "plot_name_prefix": "base_system"
+
+}

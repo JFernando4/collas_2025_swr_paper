@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/skip_connections/",
+
+  "parameter_combinations": [
+    "stepsize-Step-Size_use_skip_connections-True_preactivation_skip_connections-Pre-Activation"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Pre-Activation", "Step-Size"],
+    "placeholders_values": [
+      ["True", "False"],
+      ["0.0005", "0.001", "0.005", "0.01", "0.05", "0.1", "0.5"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black", "blue_green"],
+  "y_label": "Average Accuracy",
+  "x_label": "Step Size"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "base_system_with_skip_connections"
+}

@@ -1,0 +1,13 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/reparam_ln-True_redo_reinit_frequency-128_redo_reinit_threshold-0.0005/",
+    "data_path": "./experiments/vit_incremental_cifar/data/",
+    "net_parameters": {
+        "dropout": 0.1,
+        "reparam_ln": true,
+        "reinit_frequency": 0.0005,
+        "reinit_threshold": 128
+    },
+    "dormant_unit_threshold": 0.01,
+    "excluded_indices": [],
+    "gpu_index": 0
+}

@@ -1,0 +1,11 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/reparam_ln-True_pruning_method-threshold_reinit_freq-128_reinit_factor-0.0005_utility_function-gradient_reinit_strat-resample/",
+    "data_path": "./experiments/vit_incremental_cifar/data/",
+    "net_parameters": {
+        "dropout": 0.1,
+        "reparam_ln": true
+    },
+    "dormant_unit_threshold": 0.01,
+    "excluded_indices": [],
+    "gpu_index": 0
+}

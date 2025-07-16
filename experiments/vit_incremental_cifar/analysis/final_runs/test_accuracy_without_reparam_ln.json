@@ -1,0 +1,56 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-False",
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-True",
+            "stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-False",
+            "stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-True",
+            "reparam_ln-False_pruning_method-threshold_reinit_freq-128_reinit_factor-0.0005_utility_function-gradient_reinit_strat-resample",
+            "reparam_ln-False_replacement_rate-1e-07_maturity_threshold-10000",
+            "reparam_ln-False_redo_reinit_frequency-128_redo_reinit_threshold-0.0005",
+            "reparam_ln-False_parameter_noise_var-1e-08"
+        ],
+
+    "summary_names":
+        [
+            "test_accuracy_per_epoch"
+        ],
+
+    "max_samples": 20,
+
+    "plot_dir": "./plots/incremental_cifar/vision_transformer/performance/",
+
+    "plot_parameters": {
+        "x_label": "Number of Classes",
+        "y_label": "Best accuracy per task",
+        "xlim": [-0.5, 19.5],
+        "xticks": [0, 4, 9, 14, 19],
+        "ylim": [0.49, 0.8],
+        "labels":
+        [
+            "Base System",
+            "Network Resetting",
+            "Base System Reparam LN",
+            "Network Resetting Reparam LN",
+            "SWR",
+            "CBP",
+            "ReDo",
+            "S&P"
+        ],
+        "color_order":
+        [
+            "sky_blue",
+            "pale_violet",
+            "black",
+            "gray",
+            "blue",
+            "orange",
+            "blue_green",
+            "vermilion"
+        ]
+    },
+
+    "plot_name_prefix": "standard_ln"
+}

@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/small_network/swr_proportional/",
+
+  "parameter_combinations": [
+    "pruning_method-proportional_reinit_freq-Reinit-Frequency_reinit_factor-Reinit-Factor_utility_function-gradient_reinit_strat-mean"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Factor"],
+    "placeholders_values": [
+      ["256", "512", "1024", "2048", "4096"],
+      ["0.01", "0.05", "0.1", "0.2", "0.4"]
+    ]
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+    },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/small_network/",
+
+  "plot_name_prefix": "swr_proportional_gradient_mean"
+}

@@ -1,0 +1,30 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/extra_large_network/swr_threshold/",
+
+  "parameter_combinations": [
+    "pruning_method-threshold_reinit_freq-Reinit-Frequency_reinit_factor-Reinit-Factor_utility_function-gradient_reinit_strat-resample"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Factor"],
+    "placeholders_values": [
+      ["8192", "16384", "32768"],
+      ["1e-09", "1e-08", "1e-07", "1e-06", "1e-05"]
+    ],
+    "precision": 4
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+    },
+
+  "sample_size": 5,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/extra_large_network/",
+
+  "plot_name_prefix": "swr_threshold_gradient_resample"
+}

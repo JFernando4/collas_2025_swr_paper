@@ -1,0 +1,47 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.05_activation_function-relu",
+            "stepsize-0.01_activation_function-tanh",
+            "stepsize-0.05_activation_function-leaky_relu",
+            "stepsize-0.05_activation_function-sigmoid",
+            "stepsize-0.05_activation_function-silu",
+            "stepsize-0.01_activation_function-gelu"
+        ],
+
+    "summary_names":
+        [
+            "train_accuracy_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/large_network/activations_comparison/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "ReLU",
+            "TanH",
+            "Leaky ReLU",
+            "Sigmoid",
+            "SiLU",
+            "GELU"
+        ],
+        "color_order":
+        [
+            "black",
+            "blue_green",
+            "vermilion",
+            "blue",
+            "orange",
+            "pale_violet"
+        ],
+        "xlim": [-50, 1050],
+        "ylim": [0.8, 0.94]
+    },
+
+    "plot_name_prefix": "activations_comparison"
+}

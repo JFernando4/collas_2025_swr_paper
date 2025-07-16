@@ -1,0 +1,11 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/reparam_ln-True_parameter_noise_var-1e-08/",
+    "data_path": "./experiments/vit_incremental_cifar/data/",
+    "net_parameters": {
+        "dropout": 0.1,
+        "reparam_ln": true
+    },
+    "dormant_unit_threshold": 0.01,
+    "excluded_indices": [],
+    "gpu_index": 0
+}

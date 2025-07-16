@@ -1,0 +1,47 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network_with_different_optimizers/",
+
+    "parameter_combinations":
+        [
+            "use_adamw-False_momentum-0.9_stepsize-0.005",
+            "use_adamw-False_l2_factor-0.0001",
+            "use_adamw-False_l2_factor-0.0001_parameter_noise_var-1e-07",
+            "use_adamw-False_maturity_threshold-1_replacement_rate-0.001_cbp_utility-contribution",
+            "use_adamw-False_redo_reinit_freq-8_redo_reinit_threshold-0.001_redo_utility-activation",
+            "use_adamw-False_reinit_freq-2048_reinit_factor-1e-06_utility_function-gradient_pruning_method-threshold_reinit_strat-resample"
+        ],
+
+    "summary_names":
+        [
+            "train_loss_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/optimizers_comparison/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "Base System",
+            "L2 Regularization",
+            "Shrink and Perturb",
+            "CBP Contribution",
+            "ReDo Activation",
+            "SWR"
+        ],
+        "color_order":
+        [
+            "black",
+            "pale_violet",
+            "vermilion",
+            "orange",
+            "blue_green",
+            "blue"
+        ],
+        "xlim": [-50, 1050],
+        "ylim": [0.82, 0.945]
+    },
+
+    "plot_name_prefix": "sgdw_comparison"
+}

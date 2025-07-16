@@ -1,0 +1,35 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/advantages_of_plasticity_algorithms/",
+
+    "parameter_combinations":
+        [
+            "l2_factor-0.0001_parameter_noise_var-1e-07",
+            "num_hidden-1000_stepsize-0.05"
+        ],
+
+    "summary_names":
+        [
+            "train_accuracy_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/advantages_of_plasticity_algorithms/",
+
+    "bin_sizes": [200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "100 units shrink and perturb",
+            "1,000 units base system"
+        ],
+        "color_order":
+        [
+            "vermilion",
+            "blue_green"
+        ],
+        "xlim": [-50, 1050],
+        "ylim": [0.915, 0.95]
+    },
+
+    "plot_name_prefix": "advantages_of_plasticity_algorithms"
+}

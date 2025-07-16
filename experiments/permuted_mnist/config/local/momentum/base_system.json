@@ -1,0 +1,28 @@
+{
+  "__comment_1__": "Parameters for the optimizer.",
+  "momentum": 0.9,
+  "beta2": 0.999,
+  "stepsize": 0.05,
+  "use_adamw": true,
+  "l2_factor": 0.0,
+  "reset_optim_after_task_change": false,
+
+  "__comment_2__": "Parameters for the architecture",
+  "num_layers": 3,
+  "num_hidden": 100,
+  "batch_size": 30,
+  "extended_summaries": false,
+
+  "__comment_3__": "Permuted MNIST problem parameters. Classes increase by 5 every 100 epochs.",
+  "num_permutations": 100,
+
+  "__comment_5__": "For creating the results directory.",
+  "relevant_parameters": [
+    "num_hidden",
+    "use_adamw",
+    "reset_optim_after_task_change",
+    "momentum",
+    "stepsize",
+    "l2_factor"
+  ]
+}

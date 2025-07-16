@@ -1,0 +1,17 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/incremental_cifar/",
+
+  "parameter_combinations": [
+    "reparam_ln-True_pruning_method-threshold_reinit_freq-Reinit-Frequency_reinit_factor-Reinit-Factor_utility_function-gradient_reinit_strat-resample"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Factor"],
+    "placeholders_values": [
+      ["64", "128", "254"],
+      ["0.0001", "0.0005", "0.001"]
+    ]
+  }
+}

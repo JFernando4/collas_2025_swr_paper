@@ -1,0 +1,27 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network_with_different_optimizers/base_system/",
+
+  "parameter_combinations": ["use_adamw-False_momentum-Momentum_stepsize-Step-Size"],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Momentum", "Step-Size"],
+    "placeholders_values": [
+      ["0.9", "0.99", "0.999"],
+      ["0.01", "0.005", "0.001", "0.0005", "0.0001", "5e-05", "1e-05", "5e-06", "1e-06", "5e-07", "1e-07"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black", "blue_green", "pale_violet"],
+  "y_label": "Average Accuracy",
+  "x_label": "Step Size"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network_with_different_optimizers/",
+
+  "plot_name_prefix": "sgdw"
+}

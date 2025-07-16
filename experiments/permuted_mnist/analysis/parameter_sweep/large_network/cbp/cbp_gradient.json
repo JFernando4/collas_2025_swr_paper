@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/cbp/",
+
+  "parameter_combinations": [
+    "maturity_threshold-Maturity-Threshold_replacement_rate-Replacement-Rate_cbp_utility-gradient"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Maturity-Threshold", "Replacement-Rate"],
+    "placeholders_values": [
+      ["1", "5", "10", "50", "100", "500"],
+      ["1e-06", "1e-05", "0.0001", "0.001", "0.01", "0.1"]
+    ]
+  },
+
+  "plot_parameters": {
+  "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+  "y_label": "Average Accuracy",
+  "x_label": "Reinit Factor"
+  },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "cbp_gradient"
+}

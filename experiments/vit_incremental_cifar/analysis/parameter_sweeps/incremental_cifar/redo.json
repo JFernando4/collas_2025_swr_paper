@@ -1,0 +1,16 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/incremental_cifar/",
+  "parameter_combinations": [
+    "reparam_ln-True_redo_reinit_frequency-Reinit-Frequency_redo_reinit_threshold-Reinit-Threshold"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Threshold"],
+    "placeholders_values": [
+      ["64", "128", "254"],
+      ["0.0005", "0.001", "0.005"]
+    ]
+  }
+}

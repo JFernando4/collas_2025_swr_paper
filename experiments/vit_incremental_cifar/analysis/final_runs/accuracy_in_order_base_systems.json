@@ -1,0 +1,51 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.01_weight_decay-0.0006_rescaled_wd-True_reparam_ln-False",
+            "stepsize-0.01_weight_decay-0.002_rescaled_wd-True_reparam_ln-False_wd_on_1d_params-False",
+            "stepsize-0.01_weight_decay-0.002_rescaled_wd-True_reparam_ln-True",
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-False",
+            "stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-False",
+            "stepsize-0.01_weight_decay-6e-06_rescaled_wd-False_reparam_ln-False_wd_on_1d_params-False",
+            "stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-True"
+        ],
+
+    "summary_names":
+        [
+            "accuracy_per_class_in_order"
+        ],
+
+    "max_samples": 5,
+
+    "plot_dir": "./plots/incremental_cifar/vision_transformer/performance/",
+
+    "plot_parameters": {
+        "x_label": "Number of Classes",
+        "y_label": "Test accuracy",
+        "labels":
+        [
+            "Rescaled WD",
+            "Rescaled WD, No Reg 1D Params",
+            "Rescaled WD, Reparam LN",
+            "Base System",
+            "Base System, Reparam LN",
+            "Base System, No Reg 1D Params",
+            "Base System, Reparam LN, Network Resetting"
+        ],
+        "color_order":
+        [
+            "vermilion",
+            "pale_violet",
+            "gray",
+            "blue",
+            "orange",
+            "blue_green",
+            "black",
+            "sky_blue"
+        ]
+    },
+
+    "plot_name_prefix": "base_systems"
+}

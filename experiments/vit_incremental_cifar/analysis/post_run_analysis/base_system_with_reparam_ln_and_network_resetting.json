@@ -1,0 +1,11 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-True/",
+    "data_path": "./experiments/vit_incremental_cifar/data/",
+    "net_parameters": {
+        "dropout": 0.1,
+        "reparam_ln": true
+    },
+    "dormant_unit_threshold": 0.01,
+    "excluded_indices": [],
+    "gpu_index": 0
+}

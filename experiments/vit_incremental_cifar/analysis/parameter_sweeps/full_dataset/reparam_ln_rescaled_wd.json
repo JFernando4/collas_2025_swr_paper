@@ -1,0 +1,16 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/full_cifar_dataset/reparam_ln_rescaled_wd/",
+
+  "parameter_combinations": [
+    "weight_decay-Weight-Decay_rescaled_wd-True_reparam_ln-True"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Weight-Decay"],
+    "placeholders_values": [
+      ["0.01", "0.005", "0.003", "0.002", "0.001", "0.0009", "0.0008", "0.0005", "0.0001"]
+    ]
+  }
+}

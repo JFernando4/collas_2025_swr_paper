@@ -1,0 +1,32 @@
+{
+  "file_management": {
+    "experiment_name": "incremental_cifar",
+    "data_path": "./experiments/vit_incremental_cifar/",
+    "results_path": "./results/vit_incremental_cifar/parameter_sweeps/",
+    "relevant_parameters":
+    [
+      "parameter_noise_var"
+    ]
+  },
+
+  "experiment_params": {
+    "stepsize": 0.01,
+    "weight_decay": 6e-6,
+    "dropout_prob": 0.1,
+    "reparam_ln": true,
+    "use_lr_schedule": true,
+    "rescaled_wd": false,
+    "momentum": 0.9,
+    "num_epochs": 2000,
+    "initial_num_classes": 5,
+    "fixed_classes": false,
+    "use_best_network": true,
+    "reset_network": false,
+    "gpu_index": 1,
+    "runs": 5
+  },
+
+  "learning_params": {
+    "parameter_noise_var": ["fixed", 1e-7, 5e-8, 1e-8, 5e-9, 1e-9]
+  }
+}

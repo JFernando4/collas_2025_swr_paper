@@ -1,0 +1,45 @@
+{
+    "results_dir": "./results/vit_incremental_cifar/final_runs/",
+
+    "parameter_combinations":
+        [
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-False",
+            "stepsize-0.01_weight_decay-2e-06_reparam_ln-False_reset_network-True",
+            "stepsize-0.01_weight_decay-6e-06_rescaled_wd-False_reparam_ln-False_wd_on_1d_params-False",
+            "stepsize-0.01_weight_decay-6e-06_reparam_ln-True_reset_network-False"
+        ],
+
+    "summary_names":
+        [
+            "ln_weight_magnitude"
+        ],
+
+    "compute_weight_magnitude_summaries": false,
+
+    "max_samples": 5,
+
+    "plot_dir": "./plots/incremental_cifar/vision_transformer/weight_magnitude_summaries/",
+
+    "plot_parameters": {
+        "log_y_scale": false,
+        "x_label": "Number of Classes",
+        "xlim": [-0.5, 20.5],
+        "xticks": [0, 5, 10, 15, 20],
+        "labels":
+        [
+            "Regular LN",
+            "Regular LN Reset",
+            "No Reg 1D Params",
+            "Reparam LN"
+        ],
+        "color_order":
+        [
+            "blue",
+            "black",
+            "blue_green",
+            "orange"
+        ]
+    },
+
+    "plot_name_prefix": "extended"
+}

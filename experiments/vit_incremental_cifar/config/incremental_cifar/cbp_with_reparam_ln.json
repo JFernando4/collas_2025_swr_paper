@@ -1,0 +1,27 @@
+{
+  "__comment_1__": "Optimizer parameters and network parameters.",
+  "stepsize": 0.01,
+  "weight_decay": 6e-6,
+  "dropout_prob": 0.1,
+  "reparam_ln": true,
+  "use_lr_schedule": true,
+  "rescaled_wd": false,
+  "momentum": 0.9,
+
+  "__comment_2__": "Incremental CIFAR-100 experiment parameters. Classes increase by 5 every 100 epochs.",
+  "num_epochs": 2000,
+  "initial_num_classes": 5,
+  "fixed_classes": false,
+  "use_best_network": true,
+
+  "__comment_3__": "SWR Parameters.",
+  "replacement_rate": 1e-7,
+  "maturity_threshold": 10000,
+
+  "__comment_4__": "For creating the results directory.",
+  "relevant_parameters": [
+    "reparam_ln",
+    "replacement_rate",
+    "maturity_threshold"
+  ]
+}

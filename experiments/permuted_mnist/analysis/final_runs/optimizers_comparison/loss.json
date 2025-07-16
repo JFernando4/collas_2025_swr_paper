@@ -1,0 +1,37 @@
+{
+    "results_dir": "./results/permuted_mnist/final_runs/large_network_with_different_optimizers/",
+
+    "parameter_combinations":
+        [
+            "use_adamw-False_momentum-0.0_stepsize-0.05",
+            "use_adamw-False_momentum-0.9_stepsize-0.005",
+            "use_adamw-True_stepsize-0.0005_momentum-0.9_beta2-0.999"
+        ],
+
+    "summary_names":
+        [
+            "train_loss_per_checkpoint"
+        ],
+
+    "plot_dir": "./plots/permuted_mnist/optimizers_comparison/",
+
+    "bin_sizes": [200, 200],
+
+    "plot_parameters": {
+        "labels":
+        [
+            "SGD",
+            "SGD With Momentum",
+            "Adam"
+        ],
+        "color_order":
+        [
+            "black",
+            "blue_green",
+            "vermilion"
+        ],
+        "xlim": [-50, 1050]
+    },
+
+    "plot_name_prefix": "optimizers_comparison"
+}

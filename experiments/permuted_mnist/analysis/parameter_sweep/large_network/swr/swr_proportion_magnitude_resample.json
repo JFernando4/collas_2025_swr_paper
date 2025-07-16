@@ -1,0 +1,29 @@
+{
+  "results_dir": "./results/permuted_mnist/parameter_sweeps/large_network/swr_proportional/",
+
+  "parameter_combinations": [
+    "pruning_method-proportional_reinit_freq-Reinit-Frequency_reinit_factor-Reinit-Factor_utility_function-magnitude_reinit_strat-resample"
+  ],
+
+  "summary_names": ["parameter_sweep", "sensitivity_curve"],
+
+  "table_parameters": {
+    "placeholders": ["Reinit-Frequency", "Reinit-Factor"],
+    "placeholders_values": [
+      ["256", "512", "1024", "2048", "4096", "8192"],
+      ["0.01", "0.05", "0.1", "0.2", "0.4", "0.8"]
+    ]
+  },
+
+  "plot_parameters": {
+    "color_order": ["black", "blue_green", "pale_violet", "vermilion", "orange", "blue"],
+    "y_label": "Average Accuracy",
+    "x_label": "Reinit Factor"
+    },
+
+  "sample_size": 10,
+
+  "plot_dir": "./plots/permuted_mnist/sensitivity_curves/large_network/",
+
+  "plot_name_prefix": "swr_proportional_magnitude_resample"
+}

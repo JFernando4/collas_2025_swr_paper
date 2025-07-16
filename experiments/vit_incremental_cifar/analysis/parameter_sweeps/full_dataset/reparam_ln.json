@@ -1,0 +1,16 @@
+{
+  "results_dir": "./results/vit_incremental_cifar/parameter_sweeps/full_cifar_dataset/reparam_ln/",
+
+  "parameter_combinations": [
+    "weight_decay-Weight-Decay_rescaled_wd-False_reparam_ln-True"
+  ],
+
+  "summary_names": ["parameter_sweep"],
+
+  "table_parameters": {
+    "placeholders": ["Weight-Decay"],
+    "placeholders_values": [
+      ["1e-05", "7e-06", "6e-06", "5e-06", "2e-06", "1e-06", "5e-07", "1e-07"]
+    ]
+  }
+}
