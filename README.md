@@ -30,7 +30,12 @@ We found that reinitializing weights maintains plasticity in a wider variety of 
 Please cite our work if you find it useful:
 
 ```latex
-
+@InProceedings{hernandez2025reinitializing,
+  title={Reinitializing weights vs units for maintaining plasticity in neural networks}, 
+  author={ J. Fernando Hernandez-Garcia and Shibhansh Dohare and Jun Luo and Richard S. Sutton},
+  booktitle={4th Conference on Lifelong Learning Agents},
+  year={2025}
+}
 ```
 
 
